@@ -1,0 +1,371 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  direction: rtl;
+}
+
+/*fonts*/
+@font-face {
+  font-family: vazir;
+  src: url("../fonts/vazir-font-v18.0.0/Vazir.eot") format("eot"),
+    url("../fonts/vazir-font-v18.0.0/Vazir.ttf") format("truetype"),
+    url("../fonts/vazir-font-v18.0.0/Vazir.woff2") format("woff2"),
+    url("../fonts/vazir-font-v18.0.0/Vazir.woff") format("woff");
+}
+
+@font-face {
+  font-family: vazir-medium;
+  src: url("../fonts/vazir-font-v18.0.0/Vazir-Medium.eot") format("eot"),
+    url("../fonts/vazir-font-v18.0.0/Vazir-Medium.ttf") format("truetype"),
+    url("../fonts/vazir-font-v18.0.0/Vazir-Medium.woff2") format("woff2"),
+    url("../fonts/vazir-font-v18.0.0/Vazir-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: vazir-bold;
+  src: url("../fonts/vazir-font-v18.0.0/Vazir-Bold.eot") format("eot"),
+    url("../fonts/vazir-font-v18.0.0/Vazir-Bold.ttf") format("truetype"),
+    url("../fonts/vazir-font-v18.0.0/Vazir-Bold.woff2") format("woff2"),
+    url("../fonts/vazir-font-v18.0.0/Vazir-Bold.woff") format("woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: vazir-light;
+  src: url("../fonts/vazir-font-v18.0.0/Vazir-Light.eot") format("eot"),
+    url("../fonts/vazir-font-v18.0.0/Vazir-Light.ttf") format("truetype"),
+    url("../fonts/vazir-font-v18.0.0/Vazir-Light.woff2") format("woff2"),
+    url("../fonts/vazir-font-v18.0.0/Vazir-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: vazir-thin;
+  src: url("../fonts/vazir-font-v18.0.0/Vazir-Thin.eot") format("eot"),
+    url("../fonts/vazir-font-v18.0.0/Vazir-Thin.ttf") format("truetype"),
+    url("../fonts/vazir-font-v18.0.0/Vazir-Thin.woff2") format("woff2"),
+    url("../fonts/vazir-font-v18.0.0/Vazir-Thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: yekan;
+  src: url("../fonts/yekan-font/Yekan.eot") format("eot"),
+    url("../fonts/yekan-font/yekan-regular.ttf") format("truetype"),
+    url("../fonts/yekan-font/Yekan.woff") format("woff"),
+}
+
+@font-face {
+  font-family: btitr;
+  src: url("../fonts/BTitr.woff") format("woff");
+  font-weight: bold;
+}
+
+button {
+  width: 160px;
+  height: 40px;
+  background-color:#F21D01; 
+  font-family: yekan;
+  color: aliceblue;
+  margin-top: 60px;
+  border: none;
+}
+
+/* header */
+header {
+  background-color: #efefef;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  width: 1200px;
+  height: 100vh;
+  background: url("../images/Untitled-4.png") no-repeat bottom center/100%;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* nav */
+nav {
+  padding-top: 20px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+nav ul {
+  display: flex;
+  margin-top: 1rem;
+}
+
+nav ul li,
+a {
+  font-family: yekan;
+  font-weight: bolder;
+  list-style: none;
+  margin-left: 20px;
+  color: #565656;
+  font-size: 16px;
+}
+
+/*header texts*/
+.header-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 7%;
+}
+nav ul li a:hover {
+  color: #F21D01;
+}
+
+header h1 {
+  font-family: btitr;
+  background-image: url("../images/coral-1053834_1920.jpg");
+  background-repeat: no-repeat;
+  font-size: 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+header h3 {
+  font-family: yekan;
+  font-size: 2rem;
+  color: #565656;
+}
+
+header p {
+  margin-top: 1rem;
+  font-family: yekan;
+  font-size: 20px;
+  color: #838383;
+  width: 52%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*services*/
+.services{
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  text-align: center;
+  align-items: center;
+}
+.services-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.services-text h1 {
+  font-family: yekan;
+  color: #838383;
+  font-size: 1rem;
+}
+  
+.services-text span{
+  color: #FBB900;  
+}
+
+.services-text h2 {
+  font-family: yekan;
+  color: #565656;
+  font-size: 2rem;
+}
+
+.services-text hr {
+  border: 1px solid #b6b6b6;
+  width: 70px;
+  margin-top: 10px;
+}
+
+.services-text p {
+  font-family: yekan;
+  color: #838383;
+  font-size: 14px;
+  margin-top: 20px;
+  width: 52%;
+}
+
+/*services items*/
+.services-items {
+  width: 1200px;
+  display: flex;
+  padding-top: 60px;
+  justify-content: space-evenly;
+}
+
+.services-items section {
+  border: 1px solid #d3d3d3;
+  width: 260px;
+  height: 260px;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-items img {
+  width: 50px;
+  height: 50px;
+}
+
+.services-items h1 {
+  font-family: yekan;
+  font-size: 1rem;
+  color: #565656;
+  margin-top: 10px;
+}
+
+.services-items p {
+  font-family: yekan;
+  font-size: 14px;
+  color: #838383;
+  margin-top: 10px;
+}
+
+.services button {
+  font-family: yekan;
+  color: aliceblue;
+  margin-top: 60px;
+}
+
+/*about us*/
+.aboutus-main{
+  background-color: #0C056C;
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+.aboutus{
+  display: flex;
+  width: 1200px;
+  text-align: center;
+  justify-content: center;
+}
+
+.aboutus figure{
+  flex: 1;
+}
+
+.aboutus section{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutus h1{
+  font-family: yekan;
+  color: aliceblue;
+  font-size: 2rem;
+}
+  
+.aboutus span{
+  color: #FBB900;  
+}
+
+.aboutus hr{
+  border: 1px solid #b6b6b6;
+  width: 70px;
+  margin-top: 20px;
+}
+
+.aboutus p{  
+  font-family: yekan;
+  font-size: 14px;
+  color: #838383;
+  margin-top: 20px;
+  padding: 0 25px;
+}
+
+/*articles*/
+.articles{
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin-top: 60px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.articles-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.articles-text h1{
+  font-family: yekan;
+  font-size: 1rem;
+  color: #565656;
+}
+
+.articles-text span{
+  color: #FBB900;  
+}
+
+.articles-text h2{
+  font-family: yekan;
+  color: #565656;
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.articles-text hr{
+  border: 1px solid #b6b6b6;
+  width: 70px;
+  margin-top: 10px;  
+}
+
+.articles-text p{
+  font-family: yekan;
+  color: #838383;
+  font-size: 14px;
+  margin-top: 20px;
+  width: 52%;
+}
+
+/*articles box*/
+.articles-box{  
+  width: 1200px;
+  display: flex;
+  padding-top: 40px;
+  justify-content: space-evenly;
+}
+
+.articles-box img{  
+  width: 280px;
+  height: 280px;
+}
+
+.articles-box h1{  
+  font-family: yekan;
+  font-size: 1rem;
+  color: #565656;
+  margin-top: 10px;
+}
+/* footer */
+footer{
+  width: 100%;
+  margin-top: 40px;
+  height: 200px;
+  background-color: #0C056C;
+}
